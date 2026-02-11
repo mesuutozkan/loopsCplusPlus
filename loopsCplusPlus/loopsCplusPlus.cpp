@@ -5,21 +5,22 @@ using namespace std;
 int main()
 {
 	/*
-	Purpose is to scan 2 number and printing the values between these
-	2 number which can be divide with 7 as an integer*/
-
-	int start, end = 0;
-
-	cin >> start >> end;
-	cout << start << " " << end << endl;
-
-	while (start <= end)
+	do
 	{
-		if (start % 7 == 0)
-		{
-			cout << start << " ";
-		}
-		start++;
-	}
+		do some processes (at first iteration, do it even if condition is false inside while.)
+	} while (condition);
+	*/
+	int password = 1234;
+	int input;
+
+	do
+	{
+		cout << "Enter The password: ";
+		cin >> input;
+
+	} while (input != password);
+
+	cout << "Correct Password";
+
 	return 0;
 }
